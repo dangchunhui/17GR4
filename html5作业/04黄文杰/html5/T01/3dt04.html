@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1{
+				width: 500px;
+				height: 300px;
+				margin: 0px auto;
+				perspective: 1000px;
+				transform-style:preserve-3d ;
+				-webkit-alt:transform-style:preserve-3d ;
+				-webkit-alt:perspective: 1000px;
+				
+				
+				
+			}
+			.div1 img{
+				width: 200px;
+				height: 300px;
+			}
+			.div1 img:nth-child(1){
+				opacity: 0.5;
+				
+			}
+			.div1 img:nth-child(2){
+				transform: translate3d(100px,50px,100px);
+				-webkit-alt:transform: translate3d(100px,50px,100px);
+			}
+			
+			
+				.div2{
+				width: 500px;
+				height: 300px;
+				margin: 100px auto;
+				perspective: 1000px;
+				transform-style:preserve-3d ;
+				-webkit-alt:transform-style:preserve-3d ;
+				-webkit-alt:perspective: 1000px;
+				transform: translateY(50px);
+				
+				
+			}
+			.div2 img{
+				width: 200px;
+				height: 300px;
+			}
+			
+			.div2 img:nth-child(1){
+				transform:rotate3d(1,0,1.5,50deg); 
+				-webkit-alt:transform:rotate3d(1,0,1.5,50deg); 
+			}
+			.div2 img:hover{
+				transform: rotate3d(0,0,0,0deg);
+				-webkit-alt:transform: rotate3d(0,0,0,0deg) ;
+				transition: all 0.4s linear;
+			}
+			
+				.div3{
+				width: 500px;
+				height: 300px;
+				margin: 100px auto;
+				perspective: 1000px;
+				transform-style:preserve-3d ; 
+				-webkit-alt:transform-style:preserve-3d ;
+				-webkit-alt:perspective: 1000px;
+				
+				
+				
+			}
+			.div3 img{
+				width: 200px;
+				height: 300px;
+			}
+			.div3 img:nth-child(1){
+				opacity: 0.5;
+				
+			}
+			.div3 img:nth-child(2){
+				transform:scaleX(1.5) scaleY(1.5) scaleZ(1.5) rotateX(45deg);
+				-webkit-alt:transform:scaleX(1.5) scaleY(1.5) scaleZ(1.5) rotateX(45deg);
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="div1">
+			
+		<img  src="img/book.jpg"       />	
+		<img  src="img/book.jpg"       />		
+			
+		</div>
+		<div class="div2">
+			
+		
+		<img  src="img/book.jpg"       />		
+			
+		</div>
+		<div class="div3">
+			
+		<img  src="img/book.jpg"       />	
+		<img  src="img/book.jpg"       />		
+			
+		</div>
+		
+	</body>
+</html>

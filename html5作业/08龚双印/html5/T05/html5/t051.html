@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background-color: #ccc;
+			}
+			.div1{
+				width: 500px;
+				height: 500px;
+				perspective: 1000px;
+				-webkit-alt:perspective: 1000px ;
+			}
+			.div2{
+				transform-style: preserve-3d;
+				transform: rotateX(-45deg);
+				-webkit-alt:transform-style: preserve-3d ;
+				opacity: 0.75;		
+		       
+			}
+			img{
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				margin: 150px;
+				 border-radius: 15px;
+		        transition:all .3s linear;
+
+			}
+			.tp1{
+				transform: rotateY(0deg) translateZ(200px);
+			}
+			.tp2{
+				transform: rotateY(60deg) translateZ(200px);
+			}
+			.tp3{
+				transform: rotateY(120deg) translateZ(200px);
+			}
+			.tp4{
+				transform: rotateY(180deg) translateZ(200px);
+			}
+			.tp5{
+				transform: rotateY(240deg) translateZ(200px);
+			}
+			.tp6{
+				transform: rotateY(300deg) translateZ(200px);
+			}
+			img:hover{
+			transform: scale(1.2);	
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div2">
+				<div class="tp1">
+					<img src="img/1.jpg" />
+				</div>
+				<div class="tp2">
+					<img src="img/2.jpg" />
+				</div>
+				<div class="tp3">
+					<img src="img/3.jpg" />
+				</div>
+				<div class="tp4">
+					<img src="img/4.jpg" />
+				</div>
+				<div class="tp5">
+					<img src="img/5.jpg" />
+				</div>
+				<div class="tp6">
+					<img src="img/6.jpg" />
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

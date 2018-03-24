@@ -1,0 +1,94 @@
+﻿*{padding:0;margin:0;}
+.clear{clear:both;overflow:hidden;}
+ul{list-style:none;}
+.container{width:800px;margin:50px auto;}
+.container li{
+	float:left;
+	width:170px;
+	margin:15px 8px;
+	padding:5px;
+	border-radius:5px;
+	border:1px solid #DDDDDD;
+}
+
+.container li img{
+	width:170;
+	height:120px;
+	border-radius:5px;
+	vertical-align:bottom;
+}
+/**每个li 设置旋转角度**/
+.container li:nth-child(1){
+	transform:rotate(30deg);
+	-ms-transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+	-moz-transform:rotate(30deg);
+}
+.container li:nth-child(2){
+	transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg);
+	-o-transform:rotate(-15deg);
+	-moz-transform:rotate(-15deg);
+}
+.container li:nth-child(3){
+	transform:rotate(25deg);
+	-ms-transform:rotate(25deg);
+	-webkit-transform:rotate(25deg);
+	-o-transform:rotate(25deg);
+	-moz-transform:rotate(25deg);
+}
+.container li:nth-child(4){
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+	-o-transform:rotate(-20deg);
+	-moz-transform:rotate(-20deg);
+}
+.container li:nth-child(5){
+	transform:rotate(5deg);
+	-ms-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+}
+.container li:nth-child(6){
+	transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg);
+	-o-transform:rotate(-15deg);
+	-moz-transform:rotate(-15deg);
+}
+.container li:nth-child(7){
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+	-o-transform:rotate(20deg);
+	-moz-transform:rotate(20deg);
+}
+.container li:nth-child(8){
+	transform:rotate(-30deg);
+	-ms-transform:rotate(-30deg);
+	-webkit-transform:rotate(-30deg);
+	-o-transform:rotate(-30deg);
+	-moz-transform:rotate(-30deg);
+}
+
+/**悬浮 旋转为0 放大**/
+.container li:hover{
+	/*transform:scaleX(2);
+	transform:scaleY(2);*/
+	transform:scale(1.2,1.2);
+	-ms-transform:scale(1.2,1.2);
+	-webkit-transform:scale(1.2,1.2);
+	-o-transform:scale(1.2,1.2);
+	-moz-transform:scale(1.2,1.2);
+	/*transform:rotate(10deg) scale(1.2,1.2);
+	-ms-transform:rotate(10deg) scale(1.2,1.2);
+	-webkit-transform:rotate(10deg) scale(1.2,1.2);
+	-o-transform:rotate(10deg) scale(1.2,1.2);
+	-moz-transform:rotate(10deg) scale(1.2,1.2);*/
+	
+}
+
