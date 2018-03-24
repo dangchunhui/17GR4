@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css" >
+			*{
+			 padding: 0px;
+			 margin: 0px;	
+			}
+			body{
+				background-color:#ccc ;
+			}
+			
+			.div1{
+				width: 500px;
+				height: 500px;
+				border: 1px solid;
+				margin: 200px;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				
+			}
+			.div2{
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				transform: rotateX(-40deg);
+				margin-top: 150px;
+				
+			}
+			
+			
+			.div2 div{
+				width: 225px;
+				height: 225px;
+				position: absolute;
+				
+			}
+ 			
+			img{
+				width: 225px;
+				height: 225px;
+				position: absolute;
+				transition: all 0.4s linear;
+				border-radius:15px ;
+				
+			}
+			
+			
+			
+			.img1{
+				transform: rotateY(0deg) translateZ(200px) ;
+			}
+			.img2{
+				transform:  rotateY(60deg) translateZ(200px) ;
+				
+			}
+			.img3{
+				transform:  rotateY(120deg) translateZ(200px) ;
+			}
+			.img4{
+				transform:  rotateY(180deg) translateZ(200px) ;
+			}
+			
+			.img5{
+				transform:  rotateY(240deg) translateZ(200px) ;
+			}
+			.img6{
+				transform:  rotateY(300deg) translateZ(200px) ;
+			}
+			
+			
+			img:hover{
+				transform: scale(1.4,1.4);
+				
+			}
+			
+			
+			
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div class="div1"  >
+		  <div  class="div2" >
+			
+			<div  class="img1" >
+				<img src="img/1.jpg" />
+			</div>
+			
+			<div  class="img2" >
+				<img src="img/2.jpg" />
+			</div>
+			
+			<div  class="img3"  >
+				<img src="img/3.jpg" />
+			</div>
+			
+			<div  class="img4"  >
+				<img src="img/4.jpg" />
+			</div>
+			
+			<div class="img5"  >
+				<img src="img/5.jpg" />
+			</div>
+			
+			<div  class="img6"  >
+				<img src="img/6.jpg" />
+			</div>
+		  </div>
+			
+		</div>
+		
+	</body>
+</html>

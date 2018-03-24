@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css">
+			.div{
+				height: 600px;
+				width: 600px;
+				border: 1px solid;
+				margin: 0 auto;
+				margin-top: 70px;
+				perspective: 1200px;
+				transform-style: preserve-3d;
+			}
+			
+			.div img{
+				width:270px ;
+				height: 350px;
+				margin-left: 170px;
+				margin-top: 80px;
+				transform: rotateX(30deg) rotateZ(-45deg) scaleY(1.1);
+				box-shadow: -7px 10px 10px #333 ;
+				transform-origin: 50% 50% 100px;
+			    transition: all 0.8s linear; 
+			}
+			
+			
+			.div img:hover{
+				transform: rotate3D(0,0,0,0deg);
+				box-shadow: -10px 20px 2px white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="div">
+			<img src="img/phone.jpg" />
+		</div>
+		
+		
+	</body>
+</html>

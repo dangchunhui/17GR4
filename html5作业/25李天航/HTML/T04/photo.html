@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>立体照片墙</title>
+  <style>
+	*{padding:0;margin:0;}
+	html,body{background:#ccc;}
+	/* main styles */
+	.slider {
+		margin: 200px auto;
+		-webkit-perspective: 1000px; 
+		-moz-perspective: 1000px; 
+		-ms-perspective: 1000px; 
+		perspective: 1000px; 
+	}
+	.x_rot {
+	   transform-style: preserve-3d;
+	   transform: rotateX(-30deg);
+	}
+	/*.y_rot {*/
+		/*transform-style: preserve-3d;*/
+		/*transform: rotateY(10deg); */
+	/*}*/
+	.y_rot div {
+		position: absolute;
+		height: 235px;
+		width: 235px;
+		left: 300px;
+		opacity: 0.75;		
+		border-radius: 15px;
+		transition:all .3s linear;
+	}
+	.y_rot div#i1 {
+		transform: rotateY(0deg) translateZ(200px);
+	}
+	.y_rot div#i2 {
+		transform: rotateY(60deg) translateZ(200px);
+	}
+	.y_rot div#i3 {
+		transform: rotateY(120deg) translateZ(200px);
+	}
+	.y_rot div#i4 {
+		transform: rotateY(180deg) translateZ(200px);
+	}
+	.y_rot div#i5 {
+		transform: rotateY(240deg) translateZ(200px);
+	}
+	.y_rot div#i6 {
+		transform: rotateY(300deg) translateZ(200px);
+	}
+	.y_rot div img {
+		height:235px;
+		width:235px;
+		border-radius: 15px;
+		transition:all .3s linear;
+	}
+
+	/* onhover effect */
+	.y_rot div:hover {
+		opacity: 1;
+	}
+	.y_rot div:hover  img{
+		height:335px;
+		width:335px;
+		margin-left:-50px;
+		margin-top:-50px;
+	}
+  </style>
+ </head>
+<body>
+	<div class="slider">
+		<div class="x_rot">
+			<div class="y_rot">
+				<div id="i1">
+					<img src="img/1.jpg" />
+				</div>
+				<div id="i2">
+					<img src="img/2.jpg" />
+				</div>
+				<div id="i3">
+					<img src="img/3.jpg" />
+				</div>
+				<div id="i4">
+					<img src="img/4.jpg" />
+				</div>
+				<div id="i5">
+					<img src="img/5.jpg" />
+				</div>
+				<div id="i6">
+					<img src="img/6.jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
