@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>3D特效例子</title>
+  <style>
+	*{padding:0;margin:0;}
+	.container{width:600px;margin:50px auto;}
+	h2{font-size:18px;margin:30px 0 10px;font-weight:normal;color:#096;}
+
+	/**设置3D**/
+	.w1{
+		-webkit-perspective: 10px;
+		perspective: 1000px;
+		margin-top:30px;
+	}
+	
+	.s1{
+		-webkit-transform-style:preserve-3d;
+		transform-style:preserve-3d;
+		position:relative;
+		height:300px;
+	}
+	.s1 img:nth-child(1){
+		z-index:1;
+		opacity:0.5;
+	}
+	.s1 img:nth-child(2){
+		z-index:5;
+		position:absolute;
+		
+	}
+/**translate**/
+	.translate img:nth-child(2){
+		 -webkit-transform: translate3d(100px,100px,200px);
+		-moz-transform: translate3d(100px,100px,200px);
+		-ms-transform: translate3d(100px,100px,200px);
+		-o-transform: translate3d(100px,100px,200px);
+		transform: translate3d(100px,100px,200px);
+	}
+	/**rotate**/
+	.rotate img:nth-child(2){
+		-webkit-transform:rotate3d(1.6,1,1.6,45deg);
+		-moz-transform:rotate3d(1.6,1,1.6,45deg);
+		transform:rotate3d(1.6,1,1.6,45deg);
+	}
+	
+	
+	/**scale**/
+	.scale img:nth-child(2){
+		-webkit-transform: scaleZ(5) rotateX(45deg);
+		transform: scaleZ(5) rotateX(45deg);
+	}
+	
+	
+	/**matrix3D**/
+	.matrix img:nth-child(2){
+		-webkit-transform:matrix3d(0.5109,0,-3,0,0,1,0,0,0.703279,0,0.7109,0,0,0,0,1);
+		
+		transform:matrix3d(0.5109,0,-3,0,0,1,0,0,0.703279,0,0.7109,0,0,0,0,1);
+	}
+	
+  </style>
+ </head>
+ <body>
+	<div class="container">
+		   <!--translate3D-->
+		<h2>translate3D</h2>
+		<div class="w1">
+			<div class="translate s1">
+				<img src="images/book.jpg" width="200px"/>
+				<img src="images/book.jpg" width="200px"/>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--rotate3D-->
+		<h2>rotate3D</h2>
+		<div class="w1">
+			<div class="rotate s1">
+				<img src="images/book.jpg" width="200px"/>
+				<img src="images/book.jpg" width="200px"/>
+			</div>
+		</div>
+     
+		<!--scale3D-->
+		<h2>scale3D</h2>
+		<div class="w1">
+			<div class="scale s1">
+				<img src="images/book.jpg" width="200px"/>
+				<img src="images/book.jpg" width="200px"/>
+			</div>
+		</div>
+		
+		<!--matrix3D-->
+		<h2>matrix3D</h2>
+		<div class="w1">
+			<div class="matrix s1">
+				<img src="images/book.jpg" width="200px"/>
+				<img src="images/book.jpg" width="200px"/>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

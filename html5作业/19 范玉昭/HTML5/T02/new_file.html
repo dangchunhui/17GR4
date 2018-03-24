@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			div{
+				border: 1px solid;
+				width: 200px;
+				margin: 200px;
+			}
+			
+			a{
+				text-decoration: none;
+				color: black;
+				
+				
+			}
+			
+			div ul{
+				width: 200px;
+				height: 200px;
+				border: 1px solid;
+				
+			}
+			
+			div ul li{
+				list-style: none;
+				width: 40px;
+				height: 25px;
+				float: left;
+				margin-left: 6px;
+				cursor: pointer;
+			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			function xianshi(){
+				
+				var ul=document.getElementById("bbb");
+				ul.style.display="block"
+				a.style.backgroundColor="greeeyellow";
+			}
+			
+			function yincang(){
+				
+				var ul=document.getElementById("bbb");
+				ul.style.display="none"
+			}
+			
+			function genghuan(a){
+				
+				var aaa=document.getElementById("aaa")
+				aaa.innerHTML="送至"+a;
+			}
+		</script>
+	</head>
+	<body>
+		<div onmousemove="xianshi()" onmouseout="yincang()">
+			<a href="#">送至：北京</a>
+			
+			<ul id="bbb">
+				<li>北京</li>
+				<li onclick="genghuan(this.innerText)">上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>天津</li>
+				
+				
+			</ul>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			input:invalid{border: 1px solid red;}
+			input:valid{border: 1px solid green;}
+		</style>
+	</head>
+	<body>
+		<form>
+		邮箱：<input type="email" name="email" placeholder="邮件格式加@符号"/><br />
+		url:<input type="url" name="url" required="required"/><br />
+		年龄：<input type="number" name="age" min="1" max="200" step="1"/><br />
+		用户名<input type="text" name="username" autofocus="autofocus" pattern="[a-zA-Zo_9]{6,8}$" required="required"/>
+		
+		<input type="submit" value="提交" />
+		<input type="reset" value="重置" />
+		</form>
+	</body>
+</html>

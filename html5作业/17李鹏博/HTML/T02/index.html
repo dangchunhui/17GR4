@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			div{
+				border: 1px solid;
+				width: 200px;
+				height: 20px;
+				
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			div ul{
+				width: 200px;
+				height:200px ; 
+				border: 1px solid;
+			}
+			div ul li{
+				list-style: none;
+				width: 40px;
+				height: 25px;
+				float: left;
+				margin-left: 6px;
+			}
+		</style>
+		<script type="text/javascript">
+			function xianshi(){
+				var ul=document.getElementById("aaa")
+				ul.style.display="block"
+			}
+			function yincang(){
+				var ul=document.getElementById("aaa")
+				ul.style.display="none"
+			}
+			function huode(a){
+				var aaa=document.getElementById("aaa")
+				aaa.innerHTML="送至"+a
+				
+			}
+			
+			
+			
+		</script>
+		
+		
+		
+		
+		
+		
+	</head>
+	<body>
+		
+		<div onmousemove="xianshi()" onmouseout="yincang()">
+			<a href="#">送至...</a>
+			<ul id="aaa">
+				<li>北京</li>
+				<li>广州</li>
+				<li onclick="huode(this.innerText)">上海</li>
+				<li>天津</li>
+				<li>杭州</li>
+				<li>新乡</li>
+				
+			</ul>
+		</div>
+	</body>
+</html>

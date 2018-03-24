@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1{
+				width: 1000px;
+				height: 300px;
+			
+				margin: auto;
+			}
+			
+			
+			.nav ul li {
+				width: 200px;
+				height:200px;
+				border: 5px solid hotpink;/*边框*/
+				list-style: none;/*去黑点*/
+				float:left ;/*横排*/
+				border-radius:50% ;/*弧度，变成圆形*/
+				text-align: center;/*水平居中*/
+				line-height: 200px;/*垂直居中*/
+			    margin-left: -40px;/*覆盖*/
+			    opacity: 0.5;/*透明*/
+			    transition: all 0.4s linear;/*动画 all 所有   时间0.4s内发生变化   线性变化*/
+			    position: relative;
+			}
+			.nav ul li:hover{
+				transform: scale(1.1);/*收缩倍数*/
+				opacity: 1;/*透明*/
+				z-index: 99999;/*鼠标放上变到最前面*/
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<nav class="nav">
+				<ul>
+					<li style="background-color:red ;">aaaaa</li>
+					<li style="background-color: #FF7F50;" >aaaaa</li>
+					<li style="background-color: aqua;">aaaaa</li>
+					<li style="background-color: blueviolet;">aaaaa</li>
+					<li style="background-color: aqua;">aaaaa</li>
+					
+				</ul>
+			</nav>
+		</div>
+		
+	</body>
+</html>
