@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.hua{
+				width: 600px;
+				height: 600px;
+				border: 1px  black;
+				margin: 0 auto;
+				margin-top:50px;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+			} 
+			.hua img{
+				width: 300px;
+				height: 400px;
+				margin-left: 150px;
+				margin-top:70px ;
+				transform: rotateX(50deg) rotateZ(-30deg) scale(1.2);
+				-webkit-transform: rotateX(60deg) rotateZ(-30deg) scale(1.2);
+				box-shadow: -10px 10px 10px #333;
+				transition: all 1s ease-in-out ;
+				transform-origin: 30% 50% 100px;
+			}
+			.hua img:hover{
+				transform: rotate3d(0,0,0,0deg);
+				-webkit-transform: rotate3d(0,0,0,0deg);
+				box-shadow: -100px 50px 20px #FFF;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="hua">
+			<img src="../l504/html第4次课/06 鼠标悬停3D立体效果图/img/phone.jpg"/>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			function jiaoyan(){
+			var aa= document.getElementById("username").validity;
+			//获取校验对象aa。通过校验的三个属性获取标签的三中校验情况给出提醒
+			if (aa.valueMissing == true) {
+				alert("用户名不能为空！")
+				//是否有值
+			}
+			if (aa.patternMismatch == true) {
+				alert("只能出入3-8个字符")
+				//规则是否有效 eg：目的：根据表单控件上设置的格式规则验证输入是否为有效格式。  用法：在表单控件上设置pattern特性，井赋予适当的匹配规则。
+			}
+			if (aa.typeMismatch==true) {
+				alert("你输入的类型不符合要求！")
+				//特殊要求是否满足 eg：比如email地址中没有@符号，或者number型控件的输入值不是有效的数字
+			}
+			//alert 弹出提示框
+			 
+			
+			
+			}
+			
+		</script>
+		
+		
+	</head>
+	<body>
+		<form action="#" method="get" autocomplete="on" novalidate="novalidate">
+			邮箱:<input type="email" id="username" name="email"  autocomplete="on"
+				 placeholder="用户名只能是字母和数字" required="required"
+				 pattern="^[0-9a-zA_Z]{3,8}$ "/><br />
+       <!--作者：mdcgwxd@163.com
+                               时间：2018-03-13
+                              描述：第一个是记录输入内容，第二个文字背景，第三个是不能为空。novaklibate=“novalibate” 是不验证  .pattern="^[规则]{位数}带位数不加‘+’不带位数有‘’+"号
+         -->
+			url地址:<input type="url" name="url" /><br />
+			年龄:<input type="number" name="age" min="1" max="100" step="5" /><br />
+			滑动条:<input type="range" name="huadong" min="1" max="200" value="10" /><br />
+			搜索:<input type="search" name="sousuo"  /><br />
+			日期类型:<input type="date" name="date" /><br />
+			      <input type="month" name="month" /><br />
+			      <input type="week" name="week" /><br />
+			      <input type="time" name="time" /><br />
+			      <input type="datetime" name="datetime" /><br />
+			      <input type="datetime-local" name="datetime-local" /><br />
+			
+			
+			<input type="submit" onclick="jiaoyan()" value="提交"  />
+			<input type="reset" value="重置" />
+		</form>
+		
+	</body>
+</html>

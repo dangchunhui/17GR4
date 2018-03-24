@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1{
+				width: 500px;
+				height: 300px;
+				border: 1px solid;
+				margin: 0 auto;
+				perspective: 1000px;/*设置z轴的距离，透视效果*/
+				-webkit-perspective:1000px;
+				transform-style:preserve-3d ;/*设置标签内元素适合3d效果*/
+				-webkit-transform-style:preserve-3d;
+			}
+			.div1 img {
+				width: 200px;
+				height: 300px;
+			}
+			.div1 img:nth-child(1) {
+				opacity: 0.5;
+			}
+			.div1 img:nth-child(2){
+				transform: translate3d(100px,50px,100px);
+				-webkit-transform: translate3d(100px,50px,100px);
+			}
+			
+			.divv2{
+				width: 500px;
+				height: 300px;
+				border: 1px solid;
+				margin: 100px auto;
+				perspective: 1000px;/*设置z轴的距离，透视效果*/
+				-webkit-perspective:1000px;
+				transform-style:preserve-3d ;/*设置标签内元素适合3d效果*/
+				-webkit-transform-style:preserve-3d;
+			}
+			.divv2 img {
+				width: 200px;
+				height: 300px;
+			}
+			.divv2 img:nth-child(1) {
+				opacity: 0.5;
+			}
+			.divv2 img:nth-child(2){
+				transform:rotate3d(1.2,0,1,45deg);
+				-webkit-transform: rotate3d(1.2,0,1,45deg);
+				-ms-transform:rotate3d(1,1,0,45deg);
+			}
+			
+			
+			.divv3{
+				width: 500px;
+				height: 300px;
+				border: 1px solid;
+				margin: 100px auto;
+				perspective: 1000px;/*设置z轴的距离，透视效果*/
+				-webkit-perspective:1000px;
+				transform-style:preserve-3d ;/*设置标签内元素适合3d效果*/
+				-webkit-transform-style:preserve-3d;
+			}
+			.divv3 img {
+				width: 200px;
+				height: 300px;
+			}
+			.divv3 img:nth-child(1) {
+				opacity: 0.5;
+			}
+			.divv3 img:nth-child(2){
+				transform:scaleX(1.5)scaleY(1.2) scaleZ(1.8);
+				-webkit-transform:scaleX(1.5)scaleY(1.2) scaleZ(1.8);
+				-ms-transform:scaleX(1.5)scaleY(1.2) scaleZ(1.8);
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<h3 style="text-align:center ;">3d的移动</h3>
+		<div class="div1">
+			<img src="../l504/html第4次课/05 3D转换/images/book.jpg"/>
+			<img src="../l504/html第4次课/05 3D转换/images/book.jpg"/>
+		</div>
+		
+		<h3 style="text-align:center ;">3d的旋转</h3>
+		<div class="divv2">
+			<img src="../l504/html第4次课/05 3D转换/images/book.jpg"/>
+			<img src="../l504/html第4次课/05 3D转换/images/book.jpg"/>
+		</div>
+		<h3 style="text-align:center ;">3d的缩放</h3>
+		<div class="divv3">
+			<img src="../l504/html第4次课/05 3D转换/images/book.jpg"/>
+			<img src="../l504/html第4次课/05 3D转换/images/book.jpg"/>
+		</div>
+	</body>
+</html>

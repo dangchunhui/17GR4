@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				font-size: 14px;
+				font-family: "楷体";
+				background: url(img/body.png)repeat-x;
+			}
+			
+			.div1{
+				width: 954px;
+				margin: auto;
+				background-color: white;
+				height: 700px;
+			}
+			
+			.div1-h2{
+				background: url(img/bg_chs.png)repeat-x center top;
+				height: 109px;
+			}
+			
+			.div1-div1{
+				height: 700px;
+				border: 1px solid #81add9;
+				border-top: 0px;
+			}
+			
+			.div1-div1-div1{
+				width: 700px;
+				margin: auto;
+				height: 700px;
+			}
+			
+			.div1-div1-div1-h3{
+				height: 25px;
+				line-height: 25px;
+				margin-top:80px;
+				border-left:3px #59AfE4 solid;
+				padding-left:10px;
+				color: #666;
+				font-size:18px ;
+			}
+			
+			table{
+				margin-top:20px;
+				border-top:1px solid #d7d7d7;
+				text-align: right;
+			}
+			
+			input{
+				margin-left:10px;
+				width: 300px;
+				height: 35px;
+			}
+			
+			table tr{
+				height: 50px;
+			}
+			
+			input[type='submit']{
+				background-color: red;
+				width: 150px;
+				height: 50px;
+				color: white;
+				font-size: 22px;
+				border: 1px solid red;
+				margin-top:20px;
+				border-radius:10px;
+			}
+			
+			input:invalid{border:1px solid red;}
+			input:valid{border: 1px #35CC00 solid;}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<h2 class="div1-h2"></h2>
+			<div class="div1-div1">
+				<div class="div1-div1-div1">
+					<h3 class="div1-div1-div1-h3">注册账号：</h3>
+					<form action="" method="get">
+						<table  width="700px" height="300px">
+							<tr>
+								<td width="120px">
+									<font color="red">*</font>昵称：
+								</td>
+								<td style="text-align: left;">
+									<input type="text" pattern="^[a-zA-Z0-9]{6,16}$" name="username" required="required" placeholder="英文、数字长度为6-10个字符" />
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<font color="red">*</font>密码：
+								</td>
+								<td style="text-align: left;">
+									<input type="password" name="password" pattern="^[a-zA-Z]{6-16}$" required="required" placeholder="长度为6-16个字符" />
+								</td>
+							</tr>
+							
+							<tr>
+								<td>手机号码：</td>
+								<td style="text-align: left;">
+									<input type="text" name="phone" pattern="^[0-9]{11,11}$" />
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<font color="red">*</font>邮箱：
+								</td>
+								<td style="text-align: left;">
+									<input type="email" name="email"  required="required"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>年龄：</td>
+								<td style="text-align: left;">
+									<input type="number" name="age" min="1" max="100" step="1" value="20" />
+								</td>
+							</tr>
+							
+							<tr>
+								<td></td>
+								<td style="text-align: left;">
+									<input type="submit" value="立即注册" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
