@@ -1,0 +1,186 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.zhengti{
+	background:url(../img/timg3.jpg) no-repeat center  ;
+	background-color: #080808;
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	margin: 10 auto;
+	
+}
+.top{
+	height: 90px;
+	width: 100%;
+	background-color: #080808;
+	background-color: rgba(0,0,0,0.3);
+}
+.tupian{
+	height: 100px;
+	width: 190px;
+	margin-left:25px ;
+	float: left;
+	
+}
+.top-ziti1{
+	height: 90px;
+	width: 600px;
+	float: left;
+   
+}
+.top-ziti1 li{
+	width: 120px;
+	height: 90px;
+	list-style-type: none;
+	text-decoration: none;
+	float: left;
+}
+.top-ziti1 li a{
+	display: block;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+}
+.top-ziti1  span{
+	display: block;
+	font-size: 10px;
+	color: #838383;
+	font-family: 'Tahoma';
+	text-transform: uppercase;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.xialakuang{
+	position: absolute;
+    display:;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+   
+}
+
+.xialakuang1{
+	width: 1120px;
+    height: 190px;
+    padding-left: 200px;
+    margin: 0 auto;
+}
+.div1{
+	margin-left: 210px;
+	float: left;
+}
+.div2{
+	float: left;
+}
+.div3{
+	float: left;
+}
+.div4{
+	margin-left: 5px;
+	float: left;
+}
+.renwu{
+	display: block;
+	width: 120px;
+	font-size: 13px;
+	font-family: 'Tahoma';
+	color: #fafafa;
+	text-align: center;
+}
+.renwu:hover{
+	color: goldenrod;
+}
+
+.shiji{
+	display: block;
+	width: 120px;
+	font-size: 13px;
+	font-family: 'Tahoma';
+	color: #fafafa;
+	text-align: center;
+
+}
+.shiji:hover{
+	color: goldenrod;
+}
+.guanxi{
+	display: block;
+	width: 120px;
+	font-size: 13px;
+	font-family: 'Tahoma';
+	color: #fafafa;
+	text-align: center;
+
+}
+.guanxi:hover{
+	color: goldenrod;
+}
+.qingjie{
+	display: block;
+	width: 120px;
+	font-size: 13px;
+	font-family: 'Tahoma';
+	color: #fafafa;
+	text-align: center;
+
+}
+.qingjie:hover{
+	color: goldenrod;
+}
+
+
+
+
+
+
+.haizeiqi{
+	display: block;
+	width: 100px;
+	height: 90px;
+	float: left;
+}
+
+.lufei{
+	display: block;
+	margin-left:80px ;
+	float: left;
+}
+.zhongbu{
+	width: 1240px;
+	height: 350px;
+	margin:0 auto ;
+}
+.zhongbu h2{
+	position: relative;
+    height: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: #ffcb60;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.zhongbu a{
+	display: block;
+    width: 155px;
+    height: 36px;
+    border: 2px solid #bd9440;
+    text-align: center;
+    line-height: 36px;
+    background: #000;
+    background: rgba(0,0,0,0.65);
+    font-size: 18px;
+    font-weight: bold;
+    color: #c89b3c;
+}
